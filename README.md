@@ -4,7 +4,7 @@
   <p>
     A <strong>TypeScript-based terminal Blackjack game</strong> running in a
     <strong>Node.js</strong> environment.<br />
-    This project is inspired by Tech With Tim’s take-home project from his video:
+    This project is inspired by <strong>Tech With Tim</strong>’s take-home project from his video:
     <a href="https://youtu.be/iJkaAJUzeWQ?si=rxYplDRSxr1XtNTT" target="_blank" rel="noopener noreferrer">
       🎥 TypeScript Full Course - From Beginner to Advanced
     </a>
