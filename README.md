@@ -1,12 +1,11 @@
-<!-- README HTML for ts_blackjack -->
 <section>
-  <h1>🃏 TypeScript Blackjack</h1>
+  <h1>Blackjack in TypeScript</h1>
   <p>
-    A <strong>TypeScript-based terminal Blackjack game</strong> running in a
+    A <strong>TypeScript</strong>-based terminal Blackjack game running in a
     <strong>Node.js</strong> environment.<br />
     This project is inspired by <strong>Tech With Tim</strong>’s take-home project from his video:
     <a href="https://youtu.be/iJkaAJUzeWQ?si=rxYplDRSxr1XtNTT" target="_blank" rel="noopener noreferrer">
-      🎥 TypeScript Full Course - From Beginner to Advanced
+      TypeScript Full Course - From Beginner to Advanced
     </a>
   </p>
 
@@ -21,14 +20,14 @@
 
   <hr />
 
-  <h2>🧩 Dependencies</h2>
+  <h2>Dependencies</h2>
   
   <p>This project relies on:</p>
   <ul>
     <li><a href="https://www.npmjs.com/package/prompt-sync" target="_blank" rel="noopener noreferrer">prompt-sync</a> — for terminal input.</li>
   </ul>
 
-  <h3>📦 Installation</h3>
+  <h3>Installation</h3>
   
   <pre>
     <code>npm install prompt-sync
@@ -38,7 +37,7 @@
 
   <hr />
 
-  <h2 style="color: #2563eb;">🧠 Explanation of the Game</h2>
+  <h2 style="color: #2563eb;">Explanation of the Game</h2>
 
   <p>
     <strong>Blackjack</strong>, often known as <strong>21</strong>, is a card game where the player competes against the dealer
@@ -46,7 +45,7 @@
     Here's a detailed breakdown of how the game works and the rules you'll implement:
   </p>
 
-  <h3 style="color: #334155; margin-top: 1.5em;">🎴 Game Setup</h3>
+  <h3 style="color: #334155; margin-top: 1.5em;">Game Setup</h3>
   <ul style="list-style-type: disc; padding-left: 1.5em;">
     <li>The game uses a standard deck of <strong>52 playing cards</strong>.</li>
     <li>Each card has a value:
@@ -60,15 +59,15 @@
     <li>Before each round, the player places a bet. If the player runs out of money, the game ends.</li>
   </ul>
 
-  <h3 style="color: #334155; margin-top: 1.5em;">♠️ Game Flow</h3>
+  <h3 style="color: #334155; margin-top: 1.5em;">Game Flow</h3>
   <ul style="list-style-type: disc; padding-left: 1.5em;">
-    <li><strong>Placing Bets:</strong> The player decides how much to bet from their available funds.</li>
-    <li><strong>Dealing Cards:</strong> Initially, both the player and the dealer are dealt two cards.
+    <li><strong>Placing Bets</strong> - The player decides how much to bet from their available funds.</li>
+    <li><strong>Dealing Cards</strong> - Initially, both the player and the dealer are dealt two cards.
       The player's cards are both face up, while the dealer has one card face up and one face down (hidden).
     </li>
   </ul>
 
-  <h4 style="color: #475569; margin-top: 1em;">🧍 Player's Turn</h4>
+  <h4 style="color: #475569; margin-top: 1em;">Player's Turn</h4>
   <ul style="list-style-type: circle; padding-left: 1.5em;">
     <li>
       If the player's initial two cards total <strong>21</strong> (an Ace and a 10-value card),
@@ -76,33 +75,33 @@
       unless the dealer also has a Blackjack, in which case the game ends.
     </li>
     <li>
-      If not a Blackjack, the player has the option to <strong>"Hit"</strong> (request additional cards)
+      If not a Blackjack, the player has the option to <strong>"hit"</strong> (request additional cards)
       one at a time to try to get closer to 21. The player can hit as many times as they like but will
-      <strong>"Bust"</strong> (automatically lose) if their total exceeds 21.
+      <strong>"bust"</strong> (automatically lose) if their total exceeds 21.
     </li>
     <li>
-      The player can also <strong>"Stand"</strong> (not take any more cards) if they are satisfied with their hand’s total value.
+      The player can also <strong>"stand"</strong> (not take any more cards) if they are satisfied with their hand’s total value.
     </li>
   </ul>
 
-  <h4 style="color: #475569; margin-top: 1em;">🃏 Dealer's Turn</h4>
+  <h4 style="color: #475569; margin-top: 1em;">Dealer's Turn</h4>
   <ul style="list-style-type: circle; padding-left: 1.5em;">
     <li>
       After the player stands, the dealer reveals their hidden card.
-      The dealer must <strong>Hit</strong> if their total is less than <strong>17</strong>
+      The dealer must <strong>hit</strong> if their total is less than <strong>17</strong>
       and <strong>Stand</strong> once it reaches <strong>17 or more</strong>.
     </li>
   </ul>
 
-  <h3 style="color: #334155; margin-top: 1.5em;">🏆 Determining the Winner</h3>
+  <h3 style="color: #334155; margin-top: 1.5em;">Determining the Winner</h3>
   <ul style="list-style-type: disc; padding-left: 1.5em;">
     <li>
-      If the <strong>dealer busts</strong> or the <strong>player's total</strong> is closer to 21 than the dealer's without exceeding 21,
+      If the dealer <strong>busts</strong> or the <strong>player's total</strong> is closer to 21 than the dealer's without exceeding 21,
       the player <strong>wins</strong> and doubles their bet.
     </li>
     <li>
       If both the player and the dealer have the <strong>same total</strong>, the game is a
-      <strong>"Push"</strong> (tie), and the player's bet is returned.
+      <strong>"push"</strong> (tie), and the player's bet is returned.
     </li>
     <li>
       If the <strong>dealer has a higher total</strong> than the player without busting,
@@ -112,7 +111,7 @@
 
   <hr />
 
-  <h2>🕹️ Examples of Gameplay</h2>
+  <h2>Examples of Gameplay</h2>
 
   <p><em>(Excerpt from Tech with Tim’s .PDF file for the project)</em></p>
 
