@@ -18,7 +18,7 @@
     </p>
   </blockquote>
 
-  <hr />
+  <hr>
 
   <h2>Dependencies</h2>
   
@@ -35,7 +35,7 @@
     </code>
   </pre>
 
-  <hr />
+  <hr>
 
   <h2 style="color: #2563eb;">Explanation of the Game</h2>
 
@@ -109,7 +109,7 @@
     </li>
   </ul>
 
-  <hr />
+  <hr>
 
   <h2>Examples of Gameplay</h2>
 
@@ -232,6 +232,6 @@
     </code>
   </pre>
 
-  <hr />
+  <hr>
 
 </section>
