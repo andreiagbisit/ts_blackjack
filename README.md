@@ -2,7 +2,7 @@
   <h1>Blackjack in TypeScript</h1>
   <p>
     A <strong>TypeScript</strong>-based terminal game of Blackjack running in a
-    <strong>Node.js</strong> environment.<br />
+    <strong>Node.js</strong> environment.
     This project is inspired by <strong>Tech With Tim</strong>’s take-home project from his video:
     <a href="https://youtu.be/iJkaAJUzeWQ?si=rxYplDRSxr1XtNTT" target="_blank" rel="noopener noreferrer">
       TypeScript Full Course - From Beginner to Advanced
