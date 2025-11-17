@@ -20,6 +20,26 @@
 
 <hr>
 
+<h3>Getting Started</h3>
+
+<ul>
+  <li><b>Running the project locally</b></li>
+</ul>
+
+<pre><code># Clone this repository
+git clone https://github.com/andreiagbisit/ts_blackjack.git
+  
+# Navigate into the project directory
+cd ts_blackjack
+
+# Install TypeScript globally in your system
+npm install -g typescript
+
+# Start the development server
+npm run dev</code></pre>
+
+<hr>
+
 <h2>Dependencies</h2>
 
 <p>This project relies on:</p>
