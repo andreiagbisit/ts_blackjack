@@ -3,7 +3,7 @@
 <p>
   A <b>TypeScript</b>-based terminal game of Blackjack running in a
   <b>Node.js</b> environment.
-  This project is inspired by <b>Tech With Tim</b>’s take-home project from his video:
+  This project is based on <b>Tech With Tim</b>’s take-home project
   <a href="https://youtu.be/iJkaAJUzeWQ?si=rxYplDRSxr1XtNTT" target="_blank" rel="noopener noreferrer">
     TypeScript Full Course - From Beginner to Advanced
   </a>
@@ -24,7 +24,7 @@
 
 <p>This project relies on:</p>
 <ul>
-  <li><a href="https://www.npmjs.com/package/prompt-sync" target="_blank" rel="noopener noreferrer">prompt-sync</a> — for terminal input.</li>
+  <li><a href="https://www.npmjs.com/package/prompt-sync" target="_blank" rel="noopener noreferrer">prompt-sync</a> - For terminal input.</li>
 </ul>
 
 <h3>Installation</h3>
@@ -34,7 +34,7 @@ npm i --save-dev @types/prompt-sync</code></pre>
 
 <hr>
 
-<h2 style="color: #2563eb;">Explanation of the Game</h2>
+<h2 style="color: #2563eb;">Explanation of the game</h2>
 
 <p>
   <b>Blackjack</b>, often known as <b>21</b>, is a card game where the player competes against the dealer
@@ -42,11 +42,11 @@ npm i --save-dev @types/prompt-sync</code></pre>
   Here's a detailed breakdown of how the game works and the rules you'll implement:
 </p>
 
-<h3 style="color: #334155; margin-top: 1.5em;">Game Setup</h3>
+<h3 style="color: #334155; margin-top: 1.5em;">Game setup</h3>
 <ul style="list-style-type: disc; padding-left: 1.5em;">
   <li>The game uses a standard deck of <b>52 playing cards</b>.</li>
   
-  <li>Each card has a value:
+  <li>Each card has a <b>value</b>:
     <ul style="list-style-type: circle; padding-left: 1.5em;">
       <li>Number cards (<b>2 through 10</b>) are worth their face value.</li>
       <li>Face cards (<b>Jack, Queen, King</b>) are each worth 10.</li>
@@ -56,10 +56,10 @@ npm i --save-dev @types/prompt-sync</code></pre>
   
   <li>The player starts with a bankroll of <b>$100</b>.</li>
   
-  <li>Before each round, the player places a bet. If the player runs out of money, the game ends.</li>
+  <li>Before each round, the player places a bet. If the player runs out of money, the game <b>ends</b>.</li>
 </ul>
 
-<h3 style="color: #334155; margin-top: 1.5em;">Game Flow</h3>
+<h3 style="color: #334155; margin-top: 1.5em;">Game flow</h3>
 
 <ul style="list-style-type: disc; padding-left: 1.5em;">
   <li><b>Placing Bets</b> - The player decides how much to bet from their available funds.</li>
@@ -69,37 +69,37 @@ npm i --save-dev @types/prompt-sync</code></pre>
   </li>
 </ul>
 
-<h4 style="color: #475569; margin-top: 1em;">Player's Turn</h4>
+<h4 style="color: #475569; margin-top: 1em;">Player's turn</h4>
 
 <ul style="list-style-type: circle; padding-left: 1.5em;">
   <li>
     If the player's initial two cards total <b>21</b> (an Ace and a 10-value card),
-    this is called a <b>"Blackjack"</b>. The player wins <b>3:2</b> on their bet immediately,
+    this is called a <b>Blackjack</b>. The player wins <b>3:2</b> on their bet immediately,
     unless the dealer also has a Blackjack, in which case the game ends.
   </li>
   
   <li>
-    If not a Blackjack, the player has the option to <b>"hit"</b> (request additional cards)
+    If not a Blackjack, the player has the option to <b>'hit'</b> (request additional cards)
     one at a time to try to get closer to 21. The player can hit as many times as they like but will
-    <b>"bust"</b> (automatically lose) if their total exceeds 21.
+    <b>'bust'</b> (automatically lose) if their total exceeds 21.
   </li>
   
   <li>
-    The player can also <b>"stand"</b> (not take any more cards) if they are satisfied with their hand’s total value.
+    The player can also <b>'stand'</b> (not take any more cards) if they are satisfied with their hand’s total value.
   </li>
 </ul>
 
-<h4 style="color: #475569; margin-top: 1em;">Dealer's Turn</h4>
+<h4 style="color: #475569; margin-top: 1em;">Dealer's turn</h4>
 
 <ul style="list-style-type: circle; padding-left: 1.5em;">
   <li>
     After the player stands, the dealer reveals their hidden card.
-    The dealer must <b>hit</b> if their total is less than <b>17</b>
-    and <b>Stand</b> once it reaches <b>17 or more</b>.
+    The dealer must hit if their total is less than <b>17</b>
+    and stand once it reaches <b>17 or more</b>.
   </li>
 </ul>
 
-<h3 style="color: #334155; margin-top: 1.5em;">Determining the Winner</h3>
+<h3 style="color: #334155; margin-top: 1.5em;">Determining the winner</h3>
 <ul style="list-style-type: disc; padding-left: 1.5em;">
   
   <li>
@@ -109,7 +109,7 @@ npm i --save-dev @types/prompt-sync</code></pre>
   
   <li>
     If both the player and the dealer have the <b>same total</b>, the game is a
-    <b>"push"</b> (tie), and the player's bet is returned.
+    <b>'push'</b> (tie), and the player's bet is returned.
   </li>
   
   <li>
@@ -120,11 +120,11 @@ npm i --save-dev @types/prompt-sync</code></pre>
 
 <hr>
 
-<h2>Examples of Gameplay</h2>
+<h2>Examples of gameplay</h2>
 
 <p><i>(Excerpt from Tech with Tim’s .PDF file for the project)</i></p>
 
-<h4>Example 1: Player Wins by Getting Closer to 21</h4>
+<ul><li><h4>Example 1: Player wins by getting closer to 21</h4></li></ul>
 
 <pre><code>Player's funds: $100
 Enter your bet: $20
@@ -139,7 +139,7 @@ Dealer hits: 10♣, 6♠, 4♠ (Total: 20)
 You win $20!
 Player's funds: $120</code></pre>
 
-<h4>Example 2: Player Gets Blackjack</h4>
+<ul><li><h4>Example 2: Player gets Blackjack</h4></li></ul>
 
 <pre><code>Player's funds: $100
 Enter your bet: $10
@@ -148,7 +148,7 @@ Dealer's hand: 9♠, [hidden]
 You win $15! (3:2 payout for Blackjack)
 Player's funds: $115</code></pre>
 
-<h4>Example 3: Player Busts</h4>
+<ul><li><h4>Example 3: Player busts</h4></li></ul>
 
 <pre><code>Player's funds: $100
 Enter your bet: $20
@@ -161,7 +161,7 @@ Dealer's hand: K♠, 3♦ (Total: 13)
 You bust and lose $20.
 Player's funds: $80</code></pre>
 
-<h4>Example 4: Dealer Busts, Player Wins</h4>
+<ul><li><h4>Example 4: Dealer busts, player wins</h4></li></ul>
 
 <pre><code>Player's funds: $80
 Enter your bet: $10
@@ -176,7 +176,7 @@ Dealer hits: 6♥, 10♠, 6♦ (Total: 22 - Dealer Busts!)
 You win $10.
 Player's funds: $90</code></pre>
 
-<h4>Example 5: Push (Tie)</h4>
+<ul><li><h4>Example 5: Push (tie)</h4></li></ul>
 
 <pre><code>Player's funds: $90
 Enter your bet: $15
@@ -188,7 +188,7 @@ Dealer's hand: 9♦, 8♣ (Total: 17)
 It's a push! Your bet is returned.
 Player's funds: $90</code></pre>
 
-<h4>Example 6: Dealer Has Blackjack, Player Loses</h4>
+<ul><li><h4>Example 6: Dealer has Blackjack, player loses</h4></li></ul>
 
 <pre><code>Player's funds: $90
 Enter your bet: $20
@@ -198,7 +198,7 @@ Dealer reveals: A♠, K♣ (Blackjack!)
 Dealer has Blackjack. You lose $20.
 Player's funds: $70</code></pre>
 
-<h4>Example 7: Dealer Wins By Getting Closest to 21</h4>
+<ul><li><h4>Example 7: Dealer wins by getting closest to 21</h4></li></ul>
 
 <pre><code>Player's funds: $70
 Enter your bet: $25
